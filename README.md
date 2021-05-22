@@ -1,1 +1,1 @@
-# SNT-submission
+# SNT-Game of Blocks Project
