@@ -8,7 +8,7 @@ pragma solidity >= 0.4.25 < 0.7.0;
 
 contract MetaCoin
 {
-    mapping(address = > uint256) balances;
+    mapping(address => uint256) balances;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
@@ -37,7 +37,7 @@ contract MetaCoin
 contract Loan is MetaCoin
 {
     // You can edit this contract as much as you want. A template is provided here and you can change the function names and implement anything else you want, but the basic tasks mentioned here should be accomplished.
-    mapping(address = > uint256) private loans;
+    mapping(address => uint256) private loans;
 
     event Request(address indexed _from, uint256 P, uint R, uint T, uint256 amt);
 
